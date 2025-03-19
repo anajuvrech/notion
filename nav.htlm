@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: '"Tinos", serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+ 			font-style: italic;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #E8E8E8;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #8c9679;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> </a>
+		<a id="Anamnese e Exame Físico" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user-doctor-message"></i> 			Anamnese e Exame físico </a>
+                <a id="Prescrições" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-file-prescription"></i> Prescrições</a>
+                <a id="Bulário" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-pills"></i> Bulário </a>
+                <a id="Doses pediátricas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-tablets"></i> Doses pediátricas </a>
+                <a id="Laboratório" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-flask"></i> Laboratório </a>
+                <a id="MDS" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house-chimney-medical"></i> MDS </a>
+                <a id="Modelos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-file-medical"></i> Modelos</a>
+                <a id="Prescrições" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-file-prescription"></i> Prescrições</a>
+		<a id="Procedimentos" onclick="navigate(this.id)" href="#"> <i class="<i class="fa-solid fa-stethoscope"></i> Procedimentos</a>
+		<a id="Recursos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-paperclip"></i> Recursos</a>
+		<a id="Vacinas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-syringe"></i> Vacinas</a>
+
+
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://home.com", '_blank').focus();
+			else if (id == 'anamneseeexamefisico')
+				window.open("https://anamneseeexamefisico.com", '_blank').focus();
+                        else if (id == 'Bulário')
+				window.open("https://bulário.com", '_blank').focus();
+                        else if (id == 'Doses pediátricas')
+				window.open("https://dosespediatricas.com", '_blank').focus();
+                        else if (id == 'Laboratório')
+                                window.open("https://laboratório.com",_blank').focus();
+                        else if (id == 'MDS')
+                                window.open("https://MDS.com",_blank').focus();
+			else if (id == 'prescrições')
+				window.open("https://prescrições.com", '_blank').focus();
+			else if (id == 'Procedimentos')
+                                window.open("https://procedimentos.com",_blank').focus();
+			else if (id == 'Recursos')
+                                window.open("https://recursos.com",_blank').focus();
+			else if (id == 'Vacinas')
+                                window.open("https://vacinas.com",_blank').focus();
+			
+
+
+
+
+		}
+	</script>
+
+
+</body>
+
+</html>
